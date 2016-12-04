@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Windows 10 关机和睡眠问题]]></title>
       <url>%2F2016%2F12%2F04%2FWindows%2010%20%E5%85%B3%E6%9C%BA%E5%92%8C%E7%9D%A1%E7%9C%A0%E9%97%AE%E9%A2%98%2F</url>
-      <content type="text"><![CDATA[了解Intel Management Engine Interface 英特尔管理引擎接口简称Intel ME利用IME协处理器，功能强大，其中就包括电源管理、开关机、睡眠等，所以Intel ME对系统的关闭和睡眠影响很大。 解决方法对于比较老的电脑，windows10更新后有可能经常出现睡死、关机不断电、关机变重启、重启变关机等状况。一个很有可能的原因就是Intel ME的固件版本过低，没有与较高版本的Intel ME驱动相匹配导致的。因为Intel ME固件一般在电脑出厂后就不再更新，而驱动却在随着系统不断更新，所以要更新固件才能解决问题。固件更新工具和源文件 根据电脑的CPU架构或者主板芯片组确定下载相应的文件，x250一般为Boardwell架构。 根据第一步的判断在网页中的C1区下载Intel ME System Tools v10 r1 固件更新工具包，里面文件较多，找到MeInfoWin64.exe和FWUpdLcl64.exe这两个文件。第一个是用来查看Intel ME固件版本信息，第二个用来执行固件更新。 同样根据第一步的判断在网页上的B1区下载Intel ME 10.0 5MB Firmware v10.0.50.1004固件源文件，把新固件的版本号与第二步中产查看到固件版本号比较，如果前者高于后者，执行更新命令：1FWUpdLcl64.exe -f firmware.bin 以上两个exe文件都是在以管理员身份运行的cmd下进行的。]]></content>
+      <content type="text"><![CDATA[了解Intel MEIntel Management Engine Interface英特尔管理引擎接口简称Intel ME利用IME协处理器，功能强大，其中就包括电源管理、开关机、睡眠等，所以Intel ME对系统的关闭和睡眠影响很大。 解决方法对于比较老的电脑，windows10更新后有可能经常出现睡死、关机不断电、关机变重启、重启变关机等状况。一个很有可能的原因就是Intel ME的固件版本过低，没有与较高版本的Intel ME驱动相匹配导致的。因为Intel ME固件一般在电脑出厂后就不再更新，而驱动却在随着系统不断更新，所以要更新固件才能解决问题。链接：固件更新工具和源文件 根据电脑的CPU架构或者主板芯片组确定下载相应的文件，x250一般为Boardwell架构。 根据第一步的判断在网页中的C1区下载Intel ME System Tools v10 r1 固件更新工具包，里面文件较多，找到MeInfoWin64.exe和FWUpdLcl64.exe这两个文件。第一个是用来查看Intel ME固件版本信息，第二个用来执行固件更新。 同样根据第一步的判断在网页上的B1区下载Intel ME 10.0 5MB Firmware v10.0.50.1004固件源文件，把新固件的版本号与第二步中产查看到固件版本号比较，如果前者高于后者，执行更新命令： 1FWUpdLcl64.exe -f firmware.bin 以上两个exe文件都是在以管理员身份运行的cmd下进行的。]]></content>
     </entry>
 
     
