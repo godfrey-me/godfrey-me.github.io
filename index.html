@@ -390,11 +390,11 @@
 <ol>
 <li>根据电脑的CPU架构或者主板芯片组确定下载相应的文件，x250一般为Boardwell架构。</li>
 <li>根据第一步的判断在网页中的C1区下载Intel ME System Tools v10 r1 固件更新工具包，里面文件较多，找到MeInfoWin64.exe和FWUpdLcl64.exe这两个文件。第一个是用来查看Intel ME固件版本信息，第二个用来执行固件更新。</li>
-<li>同样根据第一步的判断在网页上的B1区下载Intel ME 10.0 5MB Firmware v10.0.50.1004固件源文件，把新固件的版本号与第二步中产查看到固件版本号比较，如果前者高于后者，执行更新命令：</li>
-</ol>
+<li><p>同样根据第一步的判断在网页上的B1区下载Intel ME 10.0 5MB Firmware v10.0.50.1004固件源文件，把新固件的版本号与第二步中产查看到固件版本号比较，如果前者高于后者，执行更新命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">FWUpdLcl64.exe -f firmware.bin</div></pre></td></tr></table></figure>
-<ol>
-<li>以上两个exe文件都是在以管理员身份运行的cmd下进行的。</li>
+</li>
+<li><p>以上两个exe文件都是在以管理员身份运行的cmd下进行的。</p>
+</li>
 </ol>
 
           
